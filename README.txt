@@ -1,0 +1,4 @@
+1. All promoter and RNAP sequences used in this study are stored in the data folder. Files starting with HL correspond to promoter sequences, while the remaining files contain RNAP sequences.
+HL_mian denotes the prediction results with RNAP feature fusion. For the promoter-only scheme, the CNN branch and feature fusion module are removed. Features extracted by the Transformer are aggregated using global max pooling and then fed into the MLP for classification. The Adam optimizer is adopted for model training, and the loss function is replaced with cross-entropy loss.
+3. HL_tu plots the structural characteristics of sequences under the four classification categories, and HL_position visualizes the key sequence fragments and their spatial distribution near the TSS.
+4. The two CSV files preserve the raw important sequence fragments and their corresponding importance scores derived from the optimal test set.
